@@ -1,8 +1,9 @@
 /*
- * Carter Mondy
- * CS 5040
- * Fall 2023
- * Instructor: Umana Tasmin
+This program implements a binary search tree
+The main feature is the visualization method
+which visualizes the BST in the terminal window.
+This helps with understanding the rest of the methods
+as well as the BST data structure.
  */
 
 // Import Scanner
@@ -121,7 +122,7 @@ public class BST {
         }
     }
 
-    // In order to visualize tree in console
+    // Visualize tree in terminal window
     public void visualizeTree(String prefix, Node root, boolean isLeft) {
         if (root != null) {
             visualizeTree(prefix + "    ", root.right, false);
